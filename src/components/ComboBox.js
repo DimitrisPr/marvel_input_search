@@ -112,7 +112,7 @@ class ComboBox extends React.Component {
                 />
 
                 {/*DROPDOWN*/}
-                { /*if*/ this.state.dropdown_is_expanded && /* then show */
+                { /*if*/ this.state.dropdown_is_expanded && this.state.character_list.length > 0  && /* then show */
                 
                     (<div className="dropdown">
                         {this.state.character_list.map((character_name) => {
