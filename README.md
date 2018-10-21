@@ -41,6 +41,8 @@ Table of Contents
 ~ npm start
 ```
 
+*If new browser window doesn't open automatically, hit localhost:3000*
+
 ## How To Test
 
 Two simple tests are included:
@@ -50,3 +52,4 @@ Two simple tests are included:
 ```bash
 ~  npm test
 ```
+then press 'a'
