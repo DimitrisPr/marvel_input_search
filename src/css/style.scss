@@ -14,27 +14,43 @@ body, html, #root {
     height: 100vh;
     font-family: Arial, sans-serif;
     font-size: 1em;   
-    background: #f5f5f5;
+    background: #f5f5f5;    
+    padding-top: 30px;
+
 
     div {
         position: relative;
 
         .combobox { 
             display: inline-block;
-
+           
             .pseudo-input-display {
                 position: absolute;
                 border-radius: 2px;
                 cursor: text !important;
-                width: 160px; 
+                width: 220px; 
                 padding: 7.5px;  
                 border: solid .3px #b9cfd6;
                 font-size: .6em;
                 background: white;
+
+                @media screen and (min-width: 568px) {
+                    width: 300px;
+                    padding: 12px;
+                    font-size: 1.1em;
+                    border:solid 0.5px #B9CFD6;
+                    border-radius: 4px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    width: 450px;
+                    padding: 16px;
+                    font-size: 1.3em;
+                }
             }
 
             input {
-                width: 160px;
+                width: 220px;
                 margin: 0 1em 0 0;
                 padding: 7.5px;
                 border: none;
@@ -51,10 +67,26 @@ body, html, #root {
                     outline: none;
                     transition:0.2s;
                 }
+
+                @media screen and (min-width: 568px) {
+                    width: 300px;
+                    padding: 12px;
+                    font-size: 1.1em;
+                    border:solid 0.5px #B9CFD6;
+                    border-radius: 4px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    width: 450px;
+                    padding: 15px;
+                    font-size: 1.3em;
+                    border:solid 1px #B9CFD6;
+                    border-radius: 6px;
+                }
             }
 
             .dropdown {
-                width: 175px;
+                width: 235px;
                 z-index:0;
                 border:solid 0.3px #B9CFD6;
                 border-radius: 2px; 
@@ -63,6 +95,24 @@ body, html, #root {
                 border-top-right-radius: 0px;
                 background: #fff;
                 cursor: pointer;
+
+                @media screen and (min-width: 568px) {
+                    width: 324px;
+                    font-size: 1.1em;
+                    border-radius: 4px;
+                    border:solid 0.5px #B9CFD6;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    width: 480px;
+                    font-size: 1.5em;
+                    border-radius: 6px;
+                    border:solid 1px #B9CFD6;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
 
                 span {
                     display:block;  
@@ -79,19 +129,30 @@ body, html, #root {
         }
 
         button {
-            height: 27px;
+            height: 26.6px;
             padding: 6px 12px;
             border: 1px solid #f4ce39;
             border-radius: 2px;
             background: #f7d64e;
             font-size: .6em;
             transition: 0.1s;
-            
 
             &:hover {
                 background: #fad954;
                 border: 1px solid #ffd738;
                 transition: 0.2s;
+            }
+
+            @media screen and (min-width: 568px) {
+                height: 45px;
+                font-size: 1.1em;
+                border-radius: 4px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                height: 55px;
+                font-size: 1.5em;
+                border-radius: 6px;
             }
         }
 
@@ -168,3 +229,5 @@ button {
         }
     }
 }
+
+
