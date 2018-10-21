@@ -1,3 +1,5 @@
 .gitignore
 node_modules
 casualy
+.env.development$FILE 
+.env.development 
