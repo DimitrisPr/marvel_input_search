@@ -53,3 +53,4 @@ Two simple tests are included:
 ~  npm test
 ```
 then press 'a'
+*and pray*
