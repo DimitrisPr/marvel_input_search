@@ -36,7 +36,6 @@ Table of Contents
 
 ```bash
 ~ cd marvel_input_search
-~ npm set strict-ssl false //Enzyme throws error with strict-ssl 
 ~ npm install
 ~ npm start
 ```
