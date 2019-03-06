@@ -2,6 +2,8 @@
 
 # Input Search for marvel API
 
+This an asychronous input search that was made using ReactJS for marvel API.
+
 Table of Contents
 =================
 
